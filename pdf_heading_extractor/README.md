@@ -62,36 +62,6 @@ This will:
 - Process each file to extract the title and headings
 - Write a corresponding `.json` file into `/app/output`
 
-For example:
-
-```
-input/
-  └── E0H1CM114.pdf
-
-output/
-  └── E0H1CM114.json
-```
-
----
-
-## 📄 Output Format (`output.json`)
-
-Each output file will contain:
-
-```json
-{
-  "title": "Document Title",
-  "outline": [
-    { "level": "H1", "text": "Heading Level 1", "page": 1 },
-    { "level": "H2", "text": "Subheading Level 2", "page": 2 },
-    { "level": "H3", "text": "Minor Heading", "page": 3 }
-  ]
-}
-```
-
-This matches the evaluation specification exactly.
-
----
 
 ## 📚 Libraries Used
 
@@ -133,8 +103,3 @@ This is achieved by scanning for Unicode blocks in each heading line.
 - `/output`: Directory for generated JSONs
 - `README.md`: You are reading it ✅
 
----
-
-## 🙌 Author
-
-Built with love for the PDF Heading Extraction Hackathon 🏆
